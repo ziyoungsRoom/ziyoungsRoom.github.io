@@ -1,6 +1,9 @@
 <header>
-  <nav>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/blog/' | relative_url }}">Blog</a>
-  </nav>
+  <div class="header-container">
+    <a href="{{ '/blog/' | relative_url }}" class="logo">Dev's log</a>
+    <nav>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/' | relative_url }}">About</a>
+    </nav>
+  </div>
 </header>
