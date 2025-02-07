@@ -5,6 +5,7 @@
 
 .global-container {
   max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -20,7 +21,12 @@ main {
   flex: 1;
 }
 
-// Header
+a {
+  text-decoration: none;
+}
+
+// Header Styling
+
 header {
   width: 100%;
   position: sticky;
@@ -41,15 +47,20 @@ header.scrolled {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
 }
 
 header a {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
   color: black !important;
   font-weight: 700;
+}
+
+header .logo {
+  font-size: 20px;
+  font-style: italic;
 }
 
 header a:hover {
@@ -57,7 +68,75 @@ header a:hover {
   opacity: 0.7;
 }
 
+header svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+
 nav {
   display: flex;
-  gap: 20px;
+  gap: 24px;
+}
+
+// Footer Styling
+
+footer {
+  margin-top: 80px;
+  padding: 20px 0;
+  border-top: solid 1px #f7f7f7;
+  color: #888888;
+  font-size: 14px;
+}
+
+.footer-name {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.footer-links .email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888888;
+  opacity: 0.8;
+  transition: fill 0.2s ease;
+}
+
+.footer-links .email:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.footer-links .email svg {
+  width: 14px;
+  height: 14px;
+  color: #888888;
+  opacity: 0.7;
+}
+
+.footer-links .icons svg {
+  width: 24px;
+  height: 24px;
+  fill: #888888;
+  opacity: 0.7;
+  transition: fill 0.2s ease;
+}
+
+.footer-links .icons:hover {
+  fill: #888888;
+  opacity: 1;
+}
+
+.footer-copy {
+  opacity: 0.6;
+  font-size: 13px;
 }
