@@ -1,0 +1,24 @@
+<footer>
+  <h3 class="footer-name">{{ site.author.name }}</h3>
+
+  <div class="footer-links">
+    <a href="mailto:{{ site.author.email }}" aria-label="Email" class="email">
+      {% include icons/mail.svg %} {{ site.author.email }}
+    </a>
+
+    <div class="icons">
+      <a
+        href="{{site.author.github}}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        {% include icons/github.svg %}
+      </a>
+    </div>
+  </div>
+
+  <p class="footer-copy">
+    © {{ site.time | date: "%Y" }} {{ site.author.name }}. All rights reserved.
+  </p>
+</footer>
