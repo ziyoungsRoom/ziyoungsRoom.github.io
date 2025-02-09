@@ -21,13 +21,14 @@ main {
   flex: 1;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
 }
 
 // Header Styling
 
-header {
+.header {
   width: 100%;
   height: 4.25rem;
   position: sticky;
@@ -58,21 +59,11 @@ header .header-link {
   display: flex;
   align-items: center;
   color: black !important;
-  font-weight: 700;
-}
-
-header .logo {
-  font-size: 20px;
-  font-style: italic;
-}
-
-header .logo:hover {
-  text-decoration: none;
+  font-weight: 600;
 }
 
 header .header-link:hover {
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 header svg {
@@ -81,9 +72,63 @@ header svg {
   margin-left: 4px;
 }
 
-nav {
+.nav {
   display: flex;
   gap: 24px;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.nav-parent {
+  cursor: pointer;
+}
+
+/* 메뉴 숨기기 */
+.dropdown-menu {
+  position: absolute;
+  top: 103%; /* Blog 텍스트 아래 위치 */
+  left: 0;
+  display: none;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  padding: 8px 8px;
+  min-width: 100px;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+/* hover 시 나타나기 */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* dropdown 내부 링크 스타일 */
+.dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.dropdown-menu a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: 600;
 }
 
 // Footer Styling

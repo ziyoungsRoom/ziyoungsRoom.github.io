@@ -1,8 +1,17 @@
-<header>
+<header class="header">
   <div class="header-container">
-    <a href="{{ '/blog' | relative_url }}" class="logo">Dev.log</a>
-    <nav>
-      <a href="{{ '/blog' | relative_url }}" class="header-link">Blog</a>
+    <a href="{{ '/blog' | relative_url }}" class="logo">ziyoung's log.</a>
+    <nav class="nav">
+      <div class="dropdown">
+        <a href="/blog" class="header-link nav-parent">Blog</a>
+
+        <div class="dropdown-menu">
+          <a href="/blog">All</a>
+          <a href="/blog/projects">Projects</a>
+          <a href="/blog/cs">CS</a>
+          <a href="/blog/algorithm">Algorithm</a>
+        </div>
+      </div>
       <a href="{{ '/' | relative_url }}" class="header-link">About</a>
     </nav>
   </div>
