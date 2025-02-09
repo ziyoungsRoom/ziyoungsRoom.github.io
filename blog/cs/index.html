@@ -1,0 +1,15 @@
+---
+layout: default
+title: cs
+---
+
+<h1>CS.</h1>
+
+<ul>
+  {% for post in site.categories.cs %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span> — {{ post.date | date: "%Y-%m-%d" }}</span>
+  </li>
+  {% endfor %}
+</ul>
