@@ -36,6 +36,7 @@ a:hover {
 // Header Styling
 
 .header {
+  font-family: 'Rubik', sans-serif;
   width: 100%;
   height: 4.25rem;
   position: sticky;
@@ -59,9 +60,14 @@ header.scrolled {
   justify-content: space-between;
 }
 
-header .logo,
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: black !important;
+}
+
 header .header-link {
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -81,7 +87,7 @@ header svg {
 
 .nav {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   align-items: center;
   position: relative;
 }
