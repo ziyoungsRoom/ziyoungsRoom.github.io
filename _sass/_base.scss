@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: $font-main;
   line-height: 1.65;
@@ -6,6 +11,7 @@ body {
 
 main {
   flex: 1;
+  min-height: 100vh;
 }
 
 .global-container {
@@ -14,15 +20,15 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .wrapper {
-  max-width: 1024px !important;
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 a,
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
