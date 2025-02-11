@@ -1,0 +1,55 @@
+footer {
+  margin-top: 80px;
+  padding: 20px 0;
+  border-top: solid 1px #f7f7f7;
+  color: $gray-800;
+  font-size: 14px;
+}
+
+.footer-name {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.footer-links .email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.7;
+  transition: fill $transition;
+}
+
+.footer-links .email:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.footer-links .email svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+.footer-links .icons svg {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: fill 0.2s ease;
+}
+
+.footer-links .icons:hover {
+  opacity: 1;
+}
+
+.footer-copy {
+  opacity: 0.7;
+  font-size: 13px;
+}

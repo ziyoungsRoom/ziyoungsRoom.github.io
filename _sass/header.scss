@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  height: $header-height;
+  font-family: $font-title;
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  background: white;
+  transition: box-shadow $transition;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: $text-color !important;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  color: $text-color !important;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  background-color: $gray-800;
+}
+
+// 드롭다운 Styling
+.dropdown-menu {
+  position: absolute;
+  top: 103%; /* Blog 텍스트 아래 위치 */
+  left: 0;
+  display: none;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: $radius-lg;
+  padding: 8px 8px;
+  min-width: 100px;
+  z-index: 999;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: $transition;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: $radius-md;
+  color: $gray-300;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background $transition;
+}
+
+.dropdown-menu a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+}
