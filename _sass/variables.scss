@@ -1,0 +1,22 @@
+// Font
+$font-main: 'Inter', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, Helvetica, Arial, sans-serif;
+$font-title: 'Rubik', sans-serif;
+
+// Layout
+$container-width: 1024px;
+$header-height: 4.25rem;
+
+// Colors
+$text-color: #222;
+$gray-100: rgba(0, 0, 0, 0.05);
+$gray-300: rgba(0, 0, 0, 0.3);
+$gray-600: rgba(0, 0, 0, 0.6);
+$gray-800: #888888;
+
+// Border Radius
+$radius-md: 10px;
+$radius-lg: 14px;
+
+// Transition
+$transition: 0.15s ease;
