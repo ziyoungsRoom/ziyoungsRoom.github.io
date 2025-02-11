@@ -30,7 +30,7 @@ url: 'https://ziyoungsroom.github.io' # the base hostname & protocol for your si
 
 # Build settings
 sass:
-  sass_dir: assets/css
+  sass_dir: _sass
   style: compressed
 theme: minima
 plugins:
