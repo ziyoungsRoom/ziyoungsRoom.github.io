@@ -28,7 +28,8 @@ main {
 }
 
 a,
-a:hover {
+a:hover,
+a:visited {
   text-decoration: none;
   color: inherit;
 }

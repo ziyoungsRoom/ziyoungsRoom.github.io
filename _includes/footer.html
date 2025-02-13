@@ -1,19 +1,27 @@
 <footer>
-  <h3 class="footer-name">{{ site.author.name }}</h3>
+  <h3 class="footer-title">{{ site.title }}</h3>
 
-  <div class="footer-links">
-    <a href="mailto:{{ site.author.email }}" aria-label="Email" class="email">
-      {% include icons/mail.svg %} {{ site.author.email }}
-    </a>
+  <div class="footer-inner">
+    <span>{{site.description}}</span>
 
-    <div class="icons">
+    <div class="footer-links">
       <a
-        href="{{site.author.github}}"
+        href="mailto:{{ site.author.email }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Email"
+      >
+        <div>{% include icons/mail.svg %} Email.</div>
+        {{ site.author.email }}
+      </a>
+      <a
+        href="{{ site.author.github }}"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
       >
-        {% include icons/github.svg %}
+        <div>{% include icons/github.svg %} GitHub.</div>
+        {{ site.author.github }}
       </a>
     </div>
   </div>

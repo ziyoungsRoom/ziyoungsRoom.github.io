@@ -5,48 +5,49 @@ footer {
   font-size: 14px;
 }
 
-.footer-name {
+.footer-title {
   font-family: $font-title;
   margin-bottom: 4px;
   font-size: 18px;
   font-weight: 600;
 }
 
-.footer-links {
+.footer-inner {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 24px;
 }
 
-.footer-links .email {
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: center;
+  gap: 2px;
+  padding: 0 20px;
+  border-left: solid 2px $gray-800;
+}
+
+.footer-links div {
+  font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
+}
+
+.footer-links svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-links a {
+  display: flex;
+  gap: 4px;
+}
+
+.footer-links a:hover {
   opacity: 0.7;
-  transition: fill $transition;
-}
-
-.footer-links .email:hover {
-  text-decoration: none;
-  opacity: 1;
-}
-
-.footer-links .email svg {
-  width: 14px;
-  height: 14px;
-  opacity: 0.7;
-}
-
-.footer-links .icons svg {
-  width: 24px;
-  height: 24px;
-  opacity: 0.7;
-  transition: fill 0.2s ease;
-}
-
-.footer-links .icons:hover {
-  opacity: 1;
 }
 
 .footer-copy {
