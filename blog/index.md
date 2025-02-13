@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Blog'
+title: Blog
 ---
 
 <h1 class="detail-title">All.</h1>
