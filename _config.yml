@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Jiyoung's Development Blog
+title: ziyoung's log.
 author:
   name: 'Jiyoung'
   email: 'jiyoung990602@gmail.com'
   github: 'https://github.com/ziyoungsroom'
 description: >- # this means to ignore newlines until "baseurl:"
-  Frontend 개발자로서 공부한 내용들을 기록하고 공유하는 블로그입니다.
+  FE 개발자로서 고민했던 흔적들을 기록하고 공유하는 블로그입니다.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://ziyoungsroom.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 
