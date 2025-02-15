@@ -1,0 +1,97 @@
+.highlighter-rouge {
+  background: #fafafa !important;
+  color: #636363 !important;
+  padding: 2px 4px;
+  border: solid 1px #e8e8e8;
+  border-radius: $radius-md;
+}
+
+.highlight,
+.highlight pre,
+.highlight code {
+  background: #fafafac7 !important;
+  margin: 0;
+  color: #383a42;
+  overflow-x: auto;
+  border: none;
+}
+
+.highlight code {
+  padding: 3px 5px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+// /* Comments & Quotes → .c */
+.highlight .c {
+  color: #a0a1a7;
+  font-style: italic;
+}
+
+// /* Equal → .o */
+.highlight .o {
+  font-weight: normal;
+}
+
+// /* Keywords → .k, .kd, .kn, .kp, .kr */
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr {
+  color: #a626a4;
+  font-weight: normal;
+}
+
+/* Built-ins / special / this → .bp */
+.highlight .bp {
+  color: #c18401;
+  font-style: italic;
+}
+
+// /* Function name → .nf */
+.highlight .nf {
+  color: #da9500;
+  font-weight: normal;
+}
+
+/* Class names, tags → .nc, .nt */
+.highlight .nc,
+.highlight .nt {
+  color: #e45b49;
+}
+
+/* Literals → .no, .na */
+.highlight .no,
+.highlight .nx,
+.highlight .na {
+  color: #0184bb;
+}
+
+/* Strings → .s */
+.highlight .s,
+.highlight .s1 {
+  color: #50a14f;
+}
+
+/* Attributes, numbers, variables → .mi, .nv, .vc */
+.highlight .mi,
+.highlight .nv,
+.highlight .vc {
+  color: #cd7041;
+}
+
+/* Titles, Symbols, Links → .gu, .ge, .sc */
+.highlight .sc,
+.highlight .ge,
+.highlight .gu {
+  color: #4078f2;
+}
+
+/* Bold & Italic formatting */
+.highlight .strong {
+  font-weight: 700;
+}
+
+.highlight .em {
+  font-style: italic;
+}
