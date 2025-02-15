@@ -33,6 +33,13 @@ sass:
   sass_dir: _sass
   style: compressed
 theme: minima
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter: rouge
+
 plugins:
   - jekyll-feed
 # Exclude from processing.
