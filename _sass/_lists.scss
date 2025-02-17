@@ -1,7 +1,51 @@
-.detail-title {
+.list-title {
   font-family: $font-title;
   font-size: 60px;
   font-style: italic;
   font-weight: 800;
   color: $gray-300;
+}
+
+.post-card {
+  width: 80%;
+  position: relative;
+  padding: 24px 0;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-title,
+.post-card:focus-visible .post-title {
+  color: $gray-300;
+}
+
+.post-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $text-color;
+  margin-bottom: 10px;
+  transition: color $transition;
+}
+
+.excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  color: $gray-600;
+  font-size: 0.9rem;
+}
+
+.excerpt p {
+  margin: 0 !important;
+}
+
+.post-date {
+  color: $gray-600;
+  font-size: 0.8rem;
 }

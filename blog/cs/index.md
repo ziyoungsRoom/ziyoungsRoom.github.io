@@ -3,13 +3,16 @@ layout: default
 title: cs
 ---
 
-<h1 class="detail-title">CS.</h1>
+<h1 class="list-title">CS.</h1>
 
 <ul>
   {% for post in site.categories.cs %}
-  <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span> — {{ post.date | date: "%Y-%m-%d" }}</span>
+  <li class='post-card'>
+    <a href="{{ post.url | relative_url }}"> 
+      <h2 class='post-title'>{{ post.title }} </h2>
+      <div class="excerpt">{{ post.excerpt }}</div>
+      <div class='post-date'>{{ post.date | date: "%Y년 %m월 %d일" }}</div>
+    </a>
   </li>
   {% endfor %}
 </ul>
