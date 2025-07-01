@@ -1,0 +1,12 @@
+path_prefix: "/blog"
+
+categories:
+  - slug: projects
+    title: Projects
+    description: "프로젝트 관련 글"
+  - slug: cs
+    title: CS
+    description: "CS 이론·개념"
+  - slug: algorithm
+    title: Algorithm
+    description: "알고리즘 문제·풀이"
