@@ -1,0 +1,16 @@
+{%- assign bc = site.data.blog_categories -%}
+{%- assign pfx = bc.path_prefix | default: "/blog" -%}
+<header class="site-head" role="banner">
+  <div class="wrapper site-head__inner">
+    <nav class="site-head__nav" aria-label="주요 메뉴">
+      <a class="site-head__nav-link site-head__nav-link--blog{% if page.layout == 'blog-all' %} site-head__nav-link--active{% endif %}"
+         href="{{ pfx | append: '/' | relative_url }}">Blog</a>
+      <a class="site-head__nav-link{% if page.layout == 'blog-category' and page.category_slug == 'cs' %} site-head__nav-link--active{% endif %}"
+         href="{{ pfx | append: '/cs/' | relative_url }}">CS</a>
+      <a class="site-head__nav-link{% if page.layout == 'blog-category' and page.category_slug == 'projects' %} site-head__nav-link--active{% endif %}"
+         href="{{ pfx | append: '/projects/' | relative_url }}">Projects</a>
+      <a class="site-head__nav-link{% if page.layout == 'blog-category' and page.category_slug == 'algorithm' %} site-head__nav-link--active{% endif %}"
+         href="{{ pfx | append: '/algorithm/' | relative_url }}">Algorithm</a>
+    </nav>
+  </div>
+</header>

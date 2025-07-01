@@ -13,3 +13,10 @@ $bp-md: 768px;
 $bp-lg: 1024px;
 $bp-xl: 1280px;
 
+// Header nav hover line 
+$site-head-nav-hover-line: #CFE7FF;
+$site-head-nav-line-ease: cubic-bezier(0.4, 0, 0.2, 1);
+$site-head-nav-line-duration: 0.28s;
+$site-head-padding-bottom: 0.8rem;
+$site-head-nav-line-height: 2px * 1.4;
+$site-head-padding-top: 4rem;

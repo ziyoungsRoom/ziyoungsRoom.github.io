@@ -1,18 +1,144 @@
 
-.blog-subnav {
-  margin-bottom: 1rem;
+.site-head {
+  position: relative;
+  z-index: 0;
+  background-color: $background-color;
+  padding-top: $site-head-padding-top;
+  padding-bottom: 0;
 }
 
-.blog-subnav__links {
+.site-head__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  padding-bottom: $site-head-padding-bottom;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.site-head__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1.25rem;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.blog-subnav__sep {
-  opacity: 0.45;
-  padding: 0 0.15em;
-}
+.site-head__nav-link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: $grey-color-dark;
+  text-decoration: none;
+  white-space: nowrap;
+  padding-bottom: 0.25rem;
+  isolation: isolate;
 
-.blog-subnav__link--active {
-  font-weight: 600;
-  text-decoration: underline;
+  &:visited {
+    color: $grey-color-dark;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(-1 * (#{$site-head-padding-bottom} + 1px));
+    height: $site-head-nav-line-height;
+    background-color: $site-head-nav-hover-line;
+    border-radius: 1px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform $site-head-nav-line-duration $site-head-nav-line-ease;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  &:hover,
+  &:visited:hover {
+    color: $text-color;
+    text-decoration: none;
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &:focus-visible {
+    color: $text-color;
+    outline: none;
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &--blog {
+    font-weight: 700;
+    color: $text-color;
+
+    &:visited {
+      color: $text-color;
+    }
+
+    &:hover,
+    &:visited:hover {
+      color: $text-color;
+    }
+  }
+
+  // 선택됨: 밑줄(#CFE7FF)만 유지, 텍스트 색은 비선택 항목과 동일
+  &--active {
+    color: $grey-color-dark;
+    font-weight: 400;
+
+    &:visited {
+      color: $grey-color-dark;
+    }
+
+    &::after {
+      transform: scaleX(1);
+    }
+
+    &:hover,
+    &:visited:hover {
+      color: $grey-color-dark;
+    }
+  }
+
+  &--blog.site-head__nav-link--active {
+    color: $text-color;
+    font-weight: 700;
+
+    &:visited {
+      color: $text-color;
+    }
+
+    &:hover,
+    &:visited:hover {
+      color: $text-color;
+    }
+
+    &:focus-visible {
+      color: $text-color;
+    }
+  }
+
+  &--active:focus-visible {
+    color: $grey-color-dark;
+  }
+
+  &--blog.site-head__nav-link--active:focus-visible {
+    color: $text-color;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &::after {
+      transition-duration: 0.01ms;
+    }
+  }
 }
