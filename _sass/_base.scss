@@ -1,14 +1,19 @@
-
 html {
   -webkit-text-size-adjust: 100%;
 }
 
 body {
+  font-family: $font-family-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-// 이후 예시
-// code, kbd { font-feature-settings: "liga" 0; }
-// ::selection { background: rgba($site-color-accent, 0.2); }
+code,
+pre,
+tt,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
