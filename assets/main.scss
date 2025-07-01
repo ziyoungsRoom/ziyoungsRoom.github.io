@@ -1,6 +1,9 @@
 ---
-# Minima 테마 스타일을 불러온 뒤, 이 저장소의 Sass partial을 이어서 적용합니다.
+# variables -> base -> layout -> components
 ---
 
 @import "minima";
-@import "custom";
+@import "variables";
+@import "base";
+@import "layout";
+@import "components";

@@ -1,0 +1,14 @@
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// 이후 예시
+// code, kbd { font-feature-settings: "liga" 0; }
+// ::selection { background: rgba($site-color-accent, 0.2); }

@@ -1,0 +1,37 @@
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $layout-max-width;
+  width: 100%;
+  padding-left: max(#{$layout-gutter-xs}, env(safe-area-inset-left, 0px));
+  padding-right: max(#{$layout-gutter-xs}, env(safe-area-inset-right, 0px));
+  box-sizing: border-box;
+
+  @media screen and (min-width: $bp-sm) {
+    padding-left: max(#{$layout-gutter-sm}, env(safe-area-inset-left, 0px));
+    padding-right: max(#{$layout-gutter-sm}, env(safe-area-inset-right, 0px));
+  }
+
+  @media screen and (min-width: $bp-md) {
+    padding-left: max(#{$layout-gutter-md}, env(safe-area-inset-left, 0px));
+    padding-right: max(#{$layout-gutter-md}, env(safe-area-inset-right, 0px));
+  }
+
+  @media screen and (min-width: $bp-lg) {
+    padding-left: max(#{$layout-gutter-lg}, env(safe-area-inset-left, 0px));
+    padding-right: max(#{$layout-gutter-lg}, env(safe-area-inset-right, 0px));
+  }
+
+  @media screen and (min-width: $bp-xl) {
+    padding-left: max(#{$layout-gutter-xl}, env(safe-area-inset-left, 0px));
+    padding-right: max(#{$layout-gutter-xl}, env(safe-area-inset-right, 0px));
+  }
+}
+
+.page-content {
+  @media screen and (max-width: ($bp-sm - 1px)) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
